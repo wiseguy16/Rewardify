@@ -15,6 +15,7 @@
 		4AC225DB296F368700A1EC78 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC225DA296F368700A1EC78 /* HomeModel.swift */; };
 		4AC225DD296F369400A1EC78 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC225DC296F369400A1EC78 /* User.swift */; };
 		4AC225DF296F36A500A1EC78 /* Modifiers+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC225DE296F36A500A1EC78 /* Modifiers+ext.swift */; };
+		4AC225E2296F397E00A1EC78 /* SwiftUINavigation in Frameworks */ = {isa = PBXBuildFile; productRef = 4AC225E1296F397E00A1EC78 /* SwiftUINavigation */; };
 		4AFFFA46296F2BC600E7DFBE /* RewardifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFFFA45296F2BC600E7DFBE /* RewardifyApp.swift */; };
 		4AFFFA4A296F2BCA00E7DFBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AFFFA49296F2BCA00E7DFBE /* Assets.xcassets */; };
 		4AFFFA4D296F2BCA00E7DFBE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AFFFA4C296F2BCA00E7DFBE /* Preview Assets.xcassets */; };
@@ -40,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AC225E2296F397E00A1EC78 /* SwiftUINavigation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +106,9 @@
 			dependencies = (
 			);
 			name = Rewardify;
+			packageProductDependencies = (
+				4AC225E1296F397E00A1EC78 /* SwiftUINavigation */,
+			);
 			productName = Rewardify;
 			productReference = 4AFFFA42296F2BC600E7DFBE /* Rewardify.app */;
 			productType = "com.apple.product-type.application";
@@ -132,6 +137,9 @@
 				Base,
 			);
 			mainGroup = 4AFFFA39296F2BC600E7DFBE;
+			packageReferences = (
+				4AC225E0296F397E00A1EC78 /* XCRemoteSwiftPackageReference "swiftui-navigation" */,
+			);
 			productRefGroup = 4AFFFA43296F2BC600E7DFBE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -367,6 +375,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4AC225E0296F397E00A1EC78 /* XCRemoteSwiftPackageReference "swiftui-navigation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swiftui-navigation.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4AC225E1296F397E00A1EC78 /* SwiftUINavigation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4AC225E0296F397E00A1EC78 /* XCRemoteSwiftPackageReference "swiftui-navigation" */;
+			productName = SwiftUINavigation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4AFFFA3A296F2BC600E7DFBE /* Project object */;
 }
