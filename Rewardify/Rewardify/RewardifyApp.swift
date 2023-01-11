@@ -11,7 +11,7 @@ import SwiftUI
 struct RewardifyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          LoginView(loginModel: LoginModel(user: .blank))
         }
     }
 }
